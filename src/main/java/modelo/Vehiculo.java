@@ -57,7 +57,12 @@ public class Vehiculo {
 		this.marca = marca;
 	}
 
-	public Vehiculo() {
-		throw new UnsupportedOperationException();
+	public Vehiculo(String nombre, int ano, int precio, double kmRecorridos, String color, String marca) {
+		this.nombre = nombre;
+		this.ano = ano;
+		this.precio = precio;
+		this.kmRecorridos = kmRecorridos;
+		this.color = color;
+		this.marca = marca;
 	}
 }

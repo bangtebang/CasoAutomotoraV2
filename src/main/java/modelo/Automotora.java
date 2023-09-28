@@ -17,7 +17,7 @@ public class Automotora {
 		this.nombreSede = nombreSede;
 	}
 
-	public Automotora() {
-		throw new UnsupportedOperationException();
+	public Automotora(String nombreSede) {
+		this.nombreSede = nombreSede;
 	}
 }

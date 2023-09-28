@@ -48,7 +48,11 @@ public class Cliente {
 		this.rut = rut;
 	}
 
-	public Cliente() {
-		throw new UnsupportedOperationException();
+	public Cliente(String nombre, String direccion, String numeroTelefono, String correoElectronico, String rut) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.numeroTelefono = numeroTelefono;
+		this.correoElectronico = correoElectronico;
+		this.rut = rut;
 	}
 }
