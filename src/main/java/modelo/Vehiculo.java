@@ -65,4 +65,7 @@ public class Vehiculo {
 		this.color = color;
 		this.marca = marca;
 	}
+	public Automotora getAutomotora() {
+		return this.automotora;
+	}
 }
