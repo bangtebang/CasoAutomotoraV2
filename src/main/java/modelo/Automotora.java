@@ -3,6 +3,7 @@ package modelo;
 import java.util.ArrayList;
 import modelo.Vehiculo;
 import modelo.Cliente;
+import utils.*;
 
 public class Automotora {
 	private String nombreSede;
@@ -16,27 +17,27 @@ public class Automotora {
 	public void setNombreSede(String nombreSede) {
 		this.nombreSede = nombreSede;
 	}
-	public void agregarCliente(Cliente cliente) {
-		clientes.add(cliente);
+	public boolean agregarCliente(String nombre, String rut, String numeroTelefono, String direccion, String correoElectronico) {
+		if (ValidadorRut.validarDigito(rut)&&ValidadorCorreo.validarCorreo(correoElectronico)) {
+			Cliente cliente= new Cliente(nombre,direccion,numeroTelefono,correoElectronico,rut);
+			this.clientes.add(cliente);
+			return true;
+		} else {
+			return false;
+		}
 	}
-	public void agregarVehiculo(Vehiculo vehiculo) {
-		vehiculos.add(vehiculo);
+	public void agregarVehiculo(String nombre, int ano, int precio, int kmRecorridos, String color, String marca) {
+		Vehiculo vehiculo=new  Vehiculo(nombre, ano, precio, kmRecorridos, color, marca);
+		this.vehiculos.add(vehiculo);
 	}
-	public void buscarVehiculo(String nombre) {
-		for (Vehiculo vehiculo : vehiculos) {
-			if (vehiculo.getNombre().equals(nombre)) {
-				System.out.println("Vehiculo encontrado");
-				System.out.println("Nombre: " + vehiculo.getNombre());
-				System.out.println("Ano: " + vehiculo.getAno());
-				System.out.println("Precio: " + vehiculo.getPrecio());
-				System.out.println("Km recorridos: " + vehiculo.getKmRecorridos());
-				System.out.println("Color: " + vehiculo.getColor());
-				System.out.println("Marca: " + vehiculo.getMarca());
-				System.out.println("Automotora: " + vehiculo.getAutomotora().getNombreSede());
-				return;
+	public ArrayList<Vehiculo> buscarAutoNombre(String nombre) {
+		ArrayList<Vehiculo> vehiculosEncontrados = new ArrayList<Vehiculo>();
+		for (Vehiculo auto : this.vehiculos) {
+			if (auto.getNombre().equalsIgnoreCase(nombre)) {
+				vehiculosEncontrados.add(auto);
 			}
 		}
-		System.out.println("Vehiculo no encontrado");
+		return vehiculosEncontrados;
 	}
 
 	public Automotora(String nombreSede) {

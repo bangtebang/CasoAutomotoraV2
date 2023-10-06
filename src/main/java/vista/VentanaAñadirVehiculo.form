@@ -74,15 +74,7 @@
           <text value="KM recorridos"/>
         </properties>
       </component>
-      <component id="8554e" class="javax.swing.JTextField" binding="textField1" default-binding="true">
-        <constraints>
-          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="38d3b" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+      <component id="38d3b" class="javax.swing.JTextField" binding="campoAno">
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -90,7 +82,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="3e997" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+      <component id="3e997" class="javax.swing.JTextField" binding="campoPrecio">
         <constraints>
           <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -98,7 +90,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="c185d" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+      <component id="c185d" class="javax.swing.JTextField" binding="campoMarca">
         <constraints>
           <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -106,7 +98,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="6d133" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+      <component id="6d133" class="javax.swing.JTextField" binding="campoColor">
         <constraints>
           <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -114,13 +106,15 @@
         </constraints>
         <properties/>
       </component>
-      <component id="646d7" class="javax.swing.JTextField" binding="textField6" default-binding="true">
+      <component id="646d7" class="javax.swing.JTextField" binding="campoKm">
         <constraints>
           <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value=""/>
+        </properties>
       </component>
       <component id="409d9" class="javax.swing.JButton" binding="volverButton" default-binding="true">
         <constraints>
@@ -137,6 +131,14 @@
         <properties>
           <text value="añadir"/>
         </properties>
+      </component>
+      <component id="101f5" class="javax.swing.JTextField" binding="campoModelo">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
       </component>
     </children>
   </grid>

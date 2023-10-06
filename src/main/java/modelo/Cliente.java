@@ -48,7 +48,7 @@ public class Cliente {
 		this.rut = rut;
 	}
 
-	public Cliente(String nombre, String direccion, String numeroTelefono, String correoElectronico, String rut) {
+	public Cliente(String nombre, String rut, String numeroTelefono, String direccion, String correoElectronico) {
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.numeroTelefono = numeroTelefono;

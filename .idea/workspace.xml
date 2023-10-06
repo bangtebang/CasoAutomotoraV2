@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f2ac34-46e8-4886-8476-8a3bc0c4c471" name="Changes" comment="subo modelo uml">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.java" afterDir="false" />
+    <list default="true" id="39f2ac34-46e8-4886-8476-8a3bc0c4c471" name="Changes" comment="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ValidadorCorreo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ValidadorRut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GestionTiendaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Automotora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Automotora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vista/Vista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +52,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "143",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;143&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="VentanaInicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vista.VentanaInicio" />
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695905213705</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados">
+      <created>1696214519450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696214519450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +144,7 @@
     <MESSAGE value="subo codigo creado con uml" />
     <MESSAGE value="subo constructores" />
     <MESSAGE value="subo modelo uml" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo modelo uml" />
+    <MESSAGE value="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados" />
   </component>
 </project>

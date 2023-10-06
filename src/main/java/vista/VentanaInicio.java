@@ -1,4 +1,7 @@
 package vista;
+
+import modelo.Automotora;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,9 +13,11 @@ public class VentanaInicio extends JFrame {
     private JButton BuscarVehiculoButton;
     private JPanel AutomotoraPanel;
     private JButton salirButton;
+    private  Automotora automotora;
 
 
-    public VentanaInicio(){
+    public VentanaInicio(Automotora automotora){
+        this.automotora = automotora;
         setContentPane(AutomotoraPanel);
         setTitle("Automotora");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,27 +28,29 @@ public class VentanaInicio extends JFrame {
         {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new VentanaAñadirVehiculo();
-                setVisible(false);
+                new VentanaAñadirVehiculo(automotora);
+                dispose();
             }
         });
         AñadirClienteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new VentanaAñadirCliente();
-                setVisible(false);
+                new VentanaAñadirCliente(automotora);
+                dispose();
             }
         });
         BuscarVehiculoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new VentanaBuscarVehiculo();
-                setVisible(false);
+                new VentanaBuscarVehiculo(automotora);
+                dispose();
             }
         });
-    }
-    public static void main(String[] args) {
-        new VentanaInicio();
-    }
+        salirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+    }}
 
-}
