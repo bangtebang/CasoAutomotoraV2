@@ -1,11 +1,13 @@
 package principal;
 
-import modelo.Automotora;
+import modelo.*;
 import vista.VentanaInicio;
 
 public class Principal {
     public static void main(String[] args) {
-        new VentanaInicio(new Automotora("Automotora"));
+        Automotora automotora=new Automotora("sede1");
+        new VentanaInicio(automotora);
     }
+
 
 }

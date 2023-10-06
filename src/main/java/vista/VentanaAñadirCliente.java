@@ -2,6 +2,9 @@ package vista;
 
 import modelo.Automotora;
 import controller.Controlador;
+import utils.ValidadorCorreo;
+import utils.ValidadorRut;
+
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -44,7 +47,22 @@ public class VentanaAñadirCliente extends JFrame {
         });
     }
     private void registrarCliente(){
+        if(campoNombre.getText().isEmpty() || campoRut.getText().isEmpty() || campoDireccion.getText().isEmpty() || campoCorreo.getText().isEmpty() || campoTelefono.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Debe llenar todos los campos");
+            return;
+        }
+        if (!ValidadorRut.validarRut(campoRut.getText())) {
+            JOptionPane.showMessageDialog(null, "El RUT ingresado no es válido");
+            return;
+        }
+        if (!ValidadorCorreo.validarCorreo(campoCorreo.getText())) {
+            JOptionPane.showMessageDialog(null, "El correo ingresado no es válido; debe contener '.' y '@'");
+            return;
+        }
         Controlador.agregarCliente(automotora,this.campoNombre.getText(),this.campoRut.getText(),this.campoTelefono.getText(),this.campoDireccion.getText(),this.campoCorreo.getText());
+        JOptionPane.showMessageDialog(null, "Se agrego correctamente el cliente");
+        dispose();
+        new VentanaInicio(automotora);
     }
 
     }

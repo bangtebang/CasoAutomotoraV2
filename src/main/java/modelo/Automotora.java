@@ -17,14 +17,9 @@ public class Automotora {
 	public void setNombreSede(String nombreSede) {
 		this.nombreSede = nombreSede;
 	}
-	public boolean agregarCliente(String nombre, String rut, String numeroTelefono, String direccion, String correoElectronico) {
-		if (ValidadorRut.validarDigito(rut)&&ValidadorCorreo.validarCorreo(correoElectronico)) {
+	public void agregarCliente(String nombre, String rut, String numeroTelefono, String direccion, String correoElectronico) {
 			Cliente cliente= new Cliente(nombre,direccion,numeroTelefono,correoElectronico,rut);
 			this.clientes.add(cliente);
-			return true;
-		} else {
-			return false;
-		}
 	}
 	public void agregarVehiculo(String nombre, int ano, int precio, int kmRecorridos, String color, String marca) {
 		Vehiculo vehiculo=new  Vehiculo(nombre, ano, precio, kmRecorridos, color, marca);

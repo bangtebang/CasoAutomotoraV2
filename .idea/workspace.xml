@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f2ac34-46e8-4886-8476-8a3bc0c4c471" name="Changes" comment="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ValidadorCorreo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ValidadorRut.java" afterDir="false" />
+    <list default="true" id="39f2ac34-46e8-4886-8476-8a3bc0c4c471" name="Changes" comment="subo clases de creacion de ventanas corregidas y avanzadas mas carpeta con utils de validadores mas correciones generales">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Automotora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Automotora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/principal/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaAñadirVehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaBuscarVehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vista/VentanaInicio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +55,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="principal.Principal" />
+      <module name="CasoAutomotoraV2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VentanaInicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vista.VentanaInicio" />
       <module name="CasoAutomotoraV2" />
@@ -77,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.VentanaInicio" />
       </list>
     </recent_temporary>
@@ -125,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696214519450</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="subo clases de creacion de ventanas corregidas y avanzadas mas carpeta con utils de validadores mas correciones generales">
+      <created>1696623120040</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696623120040</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +160,7 @@
     <MESSAGE value="subo constructores" />
     <MESSAGE value="subo modelo uml" />
     <MESSAGE value="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo clases de creacion de ventanas creadas con plugin jformdesigner mas controlador aun no terminados" />
+    <MESSAGE value="subo clases de creacion de ventanas corregidas y avanzadas mas carpeta con utils de validadores mas correciones generales" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo clases de creacion de ventanas corregidas y avanzadas mas carpeta con utils de validadores mas correciones generales" />
   </component>
 </project>

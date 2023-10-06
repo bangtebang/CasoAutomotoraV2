@@ -35,10 +35,16 @@ public class VentanaBuscarVehiculo  extends JFrame{
         buscarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (campoBuscarVehiculo.getText().isEmpty()){
+                    JOptionPane.showMessageDialog(null, "Debe llenar el campo");
+                    return;
+                }
                 String nombreBuscado = campoBuscarVehiculo.getText();
                 ArrayList<Vehiculo> vehiculosEncontrados = Controlador.buscarVehiculo(automotora, nombreBuscado);
                 if (vehiculosEncontrados.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "No se encontraron vehículos con ese nombre.");
+                    dispose();
+                    new VentanaInicio(automotora);
                 } else {
                     StringBuilder mensaje = new StringBuilder();
                     for (Vehiculo vehiculo : vehiculosEncontrados) {
@@ -50,6 +56,8 @@ public class VentanaBuscarVehiculo  extends JFrame{
                         mensaje.append("Marca: ").append(vehiculo.getMarca()).append("\n\n");
                     }
                     JOptionPane.showMessageDialog(null, mensaje.toString());
+                    dispose();
+                    new VentanaInicio(automotora);
                 }
             }
         });
